@@ -33,17 +33,15 @@ It's better to call multiple services in parallel when possible, and to combine 
 
 ## [04 Async in server side apps](https://www.youtube.com/watch?v=Ccf7QlFwzcA)
 
-- `CompletableFuture`
-- `CompletionStage`
+`CompletableFuture` \
+`CompletionStage`
 
-- `supplyAsync()` to call asynchronous operations
-- `allOf()` to encapsulate them in a single `CompletableFuture`
-- `join()` to wait for them all
-- then `join()` again to collect the individual results of each request
+`supplyAsync()` to call asynchronous operations \
+`allOf()` to encapsulate them in a single `CompletableFuture` \
+`join()` to wait for them all \
+then `join()` again to collect the individual results of each request \
 
 Last `join()` is still blocking the request thread.
-
-
 
 ## [05 A new paradigm](https://www.youtube.com/watch?v=OiRx2pZskR0)
 
